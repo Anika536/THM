@@ -1,0 +1,45 @@
+OWASP broken access control
+
+Task 1 : Introduction
+
+Task 2 : Broken access control introduction
+1. What is IDOR?
+-> Insecure Direct Object Reference
+2. What occurs when an attacker can access resources or data belonging to other users with the same level of access?
+->Horizontal privilege escalation
+3. What occurs when an attacker can access resources or data from users with higher access levels?
+->Vertical privilege escalation
+4. What is ABAC?
+->Attribute-Based Access Control
+5. What is RBAC?
+->Role-Based Access Control
+
+Task 3 : Deploy the machine(Deployed it)
+
+Task 4 : Assessing the web application
+Get the ip
+Do port scan using nmap (nmap -sC -sV <given ip>)
+Search for directories using gobuster (gobuster dir -u <given ip> -w /usr/share/wordlists/dirb/common.txt)
+visit the site, make an account (can use any credentials) and view source code, inspect and look for any saved cookies in storage
+visit available directories found in gobuster scan
+go to phpinfo.php
+1. Hosting server -> Apache
+2. What is the name of the parameter in the JSON response from the login request that contains a redirect link -> redirect_link
+3. What Burp Suite module allows us to capture requests and responses between ourselves and our target?
+-> proxy
+4. What is the admin’s email that can be found in the online users’ table?
+-> admin@admin.com (found on the dashboard.php page after logging in)
+
+Task 5 :  Exploiting the web application
+1. What kind of privilege escalation happened after accessing admin.php?
+-> Veritcal
+2. What parameter allows the attacker to access the admin page?
+-> isadmin
+3. What is the flag in the admin page?
+-> THM{I_C4n_3xpl01t_B4c} (found in the admin.php directory)
+
+Task 6 : Mitigation
+Read the steps
+
+Task 7 : Conclusion
+Read the text
