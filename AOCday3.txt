@@ -1,0 +1,17 @@
+Tryhackme Advent of Cyber 24
+Day 3: Even if I wanted to go, their vulnerabilities wouldn't allow it.
+
+BLUE: Where was the web shell uploaded to?
+Answer format: /directory/directory/directory/filename.php
+Answer : /media/images/rooms/shell.php (add a filter in the Elasticsearch - message: "shell.php")
+
+BLUE: What IP address accessed the web shell?
+Answer : 10.11.83.34 (add clientIP filter)
+
+RED: What is the contents of the flag.txt?
+Answer : THM{Gl1tch_Was_H3r3} (first save the php shell as shell.php in pc. then login as admin using "admin@frostypines.thm" as email and "admin" as password.
+go to admin's directory -> add new rooms -> set a new room name -> upload shell.php as the room image -> save. then go the directory /media/images/rooms/shell.php
+and type ls -> cat flag.txt)
+
+If you liked today's task, you can learn how to harness the power of advanced ELK queries.
+No answer needed.
