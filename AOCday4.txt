@@ -1,0 +1,23 @@
+Tryhackme
+Advent of Cyber 24
+
+Atomic Red Team Day 4: I’m all atomic inside!
+
+What was the flag found in the .txt file that is found in the same directory as the PhishingAttachment.xslm artefact?
+Answer : THM{GlitchTestingForSpearphishing} (Navigate to the directory C:\Users\Administrator\AppData\Local\Temp\, and open the file PhishingAttachment.txt.
+The flag included is the answer to question 1.)
+
+What ATT&CK technique ID would be our point of interest?
+Answer : T1059 (External research: Look up the MITRE ATT&CK technique ID for Command and Scripting Interpreter.)
+
+What ATT&CK subtechnique ID focuses on the Windows Command Shell?
+Answer : T1059.003 (External research: Look up the MITRE ATT&CK subtechnique ID for Command and Scripting Interpreter.)
+
+What is the name of the Atomic Test to be simulated?
+Answer : Simulate BlackByte Ransomware Print Bombing (Invoke-AtomicTest T1059.003 -ShowDetails)
+
+What is the name of the file used in the test?
+Answer : THM{R2xpdGNoIGlzIG5vdCB0aGUgZW5lbXk=} (Invoke-AtomicTest T1059.003 -TESTNUMBER 4)
+
+Learn more about the Atomic Red Team via the linked room.
+Answer : No answer needed.
