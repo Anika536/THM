@@ -1,0 +1,12 @@
+Tryhackme Advent of Cyber 2024
+Day 6: If I can't find a nice malware to use, I'm not going.
+
+What is the flag displayed in the popup window after the EDR detects the malware?
+Answer : THM{GlitchWasHere} (Followed the instructions and executed the script. Got the flag in the popup)
+
+What is the flag found in the malstrings.txt document after running floss.exe, and opening the file in a text editor?
+ANswer : THM{HiddenClue} (Used YARA rules on sysmon. Recorded the eventID from the powershell and then in the sysmon operational, we used a query
+		 to analyze the malware logs manually. Found the flag by using manual keyword search using ctrl+f.)
+		 
+If you want to more about sandboxes, have a look at the room FlareVM: Arsenal of Tools.
+Answer : No answer needed.
