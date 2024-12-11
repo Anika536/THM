@@ -1,0 +1,12 @@
+Tryhackme Advent of Cyber 2024
+Day 9: Nine o'clock, make GRC fun, tell no one.
+
+What does GRC stand for?
+Answer : Governance, Risk, and Compliance
+
+What is the flag you receive after performing the risk assessment?
+Answer : THM{R15K_M4N4G3D} (so, I had to figure out the perfect score for all
+		risk assessments. Then I got the flag.)
+
+If you enjoyed this task, feel free to check out the Risk Management room.
+Answer : No answer needed.
